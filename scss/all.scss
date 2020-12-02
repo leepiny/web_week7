@@ -1,0 +1,97 @@
+$title-style: 'Merriweather', serif;
+
+@mixin pad {
+    @media (max-width:992px) {
+        @content
+    }
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    // outline: 1px solid rgb(127, 218, 70);
+}
+h1,h2,h3,h4,h5{
+    font-family: $title-style;
+    line-height: 1.5;
+}
+.font-xl{
+    font-size: 86px;
+}
+.font-l{
+    font-size: 62px;
+}
+.font-m{
+    font-size: 38px;
+}
+.font-s{
+    font-size: 14px;
+}
+.bg-color{
+    background: #F1F5F6;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    width: 1410px;
+    margin: 0 auto;
+}
+nav{
+    .logo{
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/logo-fixie.svg) center center no-repeat;
+        background-size: auto;
+        width: 112px;
+        height: 48px;
+        display: block;
+        text-indent: 110%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .nav-link a{
+        width: 87px;
+        font-weight: bold;
+    }
+    .nav-link a:hover{
+        text-decoration: none;
+        background: #F1F5F6;
+    }
+}
+.resume-item{
+    .resume-text {
+        min-width: 709px;
+        padding-left: 155px;
+        p{
+            width: 70%;
+        }
+    }
+    .resume-photo img{
+        min-width: 709px;
+        min-height: 709px;
+        overflow:hidden;
+        object-fit: cover;
+    }
+}
+.slogan p{
+    width: 33%;
+    margin: 0 auto;
+    @include pad{
+        width: 70%;
+    }
+}
+.introduction{
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img4.jpg)50% 25% no-repeat;
+    background-size:cover;
+    height: 450px;
+    .introduction-text{
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+    }
+}
