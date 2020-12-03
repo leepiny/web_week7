@@ -8,7 +8,6 @@ $title-style: 'Merriweather', serif;
 
 *,*::before,*::after {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
     // outline: 1px solid rgb(127, 218, 70);
 }
 h1,h2,h3,h4,h5{
@@ -57,10 +56,12 @@ nav{
     .nav-link a{
         width: 87px;
         font-weight: bold;
+        border-bottom: 5px solid transparent;
     }
     .nav-link a:hover{
         text-decoration: none;
-        background: #F1F5F6;
+        border-bottom: 5px solid black;
+        transition: .3s;
     }
 }
 .resume-item{
@@ -71,11 +72,24 @@ nav{
             width: 70%;
         }
     }
-    .resume-photo img{
-        min-width: 709px;
-        min-height: 709px;
-        overflow:hidden;
-        object-fit: cover;
+    .resume-photo{
+        background: #000;
+        img{
+            min-width: 709px;
+            min-height: 709px;
+            overflow:hidden;
+            object-fit: cover;
+        }
+    } 
+    .resume-photo-btn{
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    .resume-text-btn{
+        position: absolute;
+        top: 50%;
+        left: 0;
     }
 }
 .slogan p{
@@ -89,6 +103,7 @@ nav{
     background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img4.jpg)50% 25% no-repeat;
     background-size:cover;
     height: 450px;
+    background-attachment: fixed;
     .introduction-text{
         position: absolute;
         bottom: 10%;

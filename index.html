@@ -14,45 +14,46 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&family=Merriweather:ital,wght@1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="./dist/css/all.min.css">
 </head>
 
 <body>
-    <nav class="navbar px-5 py-0 border-bottom border-dark">
+    <nav class="navbar px-5 py-0 border-bottom border-dark" data-aos="fade-down">
         <div class="logo p-1">Fixie</div>
         <ul class="nav-link list-unstyled d-flex justify-content-end m-0 p-0">
-            <li><a href="#" class="p-3 text-dark text-center">Product</a></li>
-            <li><a href="#" class="p-3 text-dark text-center ml-3">Blog</a></li>
-            <li><a href="#" class="p-3 text-dark text-center ml-3">contact</a></li>
+            <li><a href="#" class="py-4 text-dark text-center">Product</a></li>
+            <li><a href="#" class="py-4 text-dark text-center ml-3">Blog</a></li>
+            <li><a href="#" class="py-4 text-dark text-center ml-3">contact</a></li>
         </ul>
     </nav>
     <div class="container-fluid p-0">
         <ul class="resume p-0">
             <li class="resume-item d-flex align-items-center row no-gutters">
                 <div class="resume-text col-lg-6 col-12 pl-6">
-                    <h2 class="font-xl mb-4" data-aos="fade-right" data-aos-delay="60">
+                    <h2 class="font-xl mb-4" data-aos="fade-right" data-aos-delay="300">
                         Single Speed,<br> Single Life.
                     </h2>
-                    <p class="mb-4" data-aos="fade-right">
+                    <p class="mb-4" data-aos="fade-right" data-aos-delay="400">
                         More recently the “fixie” has become a popular alternative among mainly urban
                         cyclists, offering
                         the
                         advantage of simplicity compared with the standard multi-geared bicycle.
                     </p>
-                    <div class="btn btn-light px-5 rounded-0 border-dark mb-3" data-aos="fade-right">
+                    <button class="btn btn-light px-5 rounded-0 border-dark mb-3" data-aos="fade-right"
+                        data-aos-delay="500">
                         Shop Now
-                    </div>
+                    </button>
                 </div>
-                <div class="resume-photo col-lg-6 col-12">
+                <div class="resume-photo col-lg-6 col-12" data-aos="fade-left" data-aos-delay="300">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img1.jpg"
-                        alt="resume-photo">
-                    <div class="collection d-flex align-items-center border border-dark">
+                        alt="resume-photo" data-aos="fade-left" data-aos-delay="800">
+                    <div class="collection d-flex align-items-center border border-dark bg-white">
                         <a href="#" class="border-right border-dark p-4">
-                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-left text-dark"></i>
                         </a>
                         <a href="#" class="border-right border-dark p-4 mr-4">
-                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-right text-dark"></i>
                         </a>
                         <h4 class="font-m m-0">Collection 001-xx</h4>
                     </div>
@@ -61,23 +62,31 @@
 
             <li class="resume-item d-flex flex-row-reverse row no-gutters">
                 <div
-                    class="resume-text col-lg-6 col-12 bg-color d-flex flex-column-reverse justify-content-between p-5">
+                    class="resume-text col-lg-6 col-12 bg-color d-flex flex-column-reverse justify-content-between p-5 position-relative">
                     <h3 class="font-l mb-4 text-right" data-aos="fade-left">
                         One Gear,<br>Many Variations
                     </h3>
-                    <p class="mb-4" data-aos="fade-left">More recently the “fixie” has become a popular alternative among mainly urban
+                    <p class="mb-4" data-aos="fade-left">More recently the “fixie” has become a popular alternative
+                        among mainly urban
                         cyclists, offering
                         the
                         advantage of simplicity compared with the standard multi-geared bicycle.</p>
+                    <button class="resume-text-btn btn btn-light p-2 border border-dark rounded-0 bg-dark">
+                        <i class="fas fa-arrow-right text-white"></i>
+                    </button>
                 </div>
-                <div class="resume-photo col-lg-6 col-12">
+                <div class="resume-photo col-lg-6 col-12 position-relative">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img2.jpg"
-                        alt="resume-photo">
+                        alt="resume-photo" data-aos="fade-right" data-aos-delay="300">
+                    <button
+                        class="resume-photo-btn btn btn-light p-2 border border-dark rounded-0 font-weight-bold" data-aos="fade-left" data-aos-delay="300">
+                        Read More
+                    </button>
                 </div>
             </li>
 
             <li class="resume-item d-flex row no-gutters">
-                <div class="resume-text col-lg-6 col-12 bg-color d-flex flex-column justify-content-between p-5">
+                <div class="resume-text col-lg-6 col-12 bg-color d-flex flex-column justify-content-between p-5 position-relative">
                     <h3 class="font-l mb-4" data-aos="fade-right">
                         Stripped-Down<br>Performance
                     </h3>
@@ -86,10 +95,17 @@
                         cable carriers, multiple chain rings, freewheel hub, brazed-on mounting lugs—a fixed gear
                         bicycle weighs less than its geared equivalent.
                     </p>
+                    <button
+                        class="resume-photo-btn btn btn-light p-2 rounded-0 font-weight-bold bg-dark text-white" data-aos="fade-left">Read
+                        More
+                    </button>
                 </div>
-                <div class="resume-photo col-lg-6 col-12">
+                <div class="resume-photo col-lg-6 col-12 position-relative">
                     <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img3.jpg"
-                        alt="resume-photo">
+                        alt="resume-photo" data-aos="fade-left" data-aos-delay="300">
+                    <button class="resume-text-btn btn btn-light p-2 rounded-0 bg-light" data-aos="fade-right">
+                        <i class="fas fa-arrow-right text-black"></i>
+                    </button>
                 </div>
             </li>
         </ul>
@@ -110,9 +126,9 @@
     </div>
     <div class="container">
         <ul class="row sharing-story list-unstyled mb-5">
-            <li class="col-lg-4 col-12 sharing-item">
+            <li class="col-lg-4 col-12 sharing-item" data-aos="fade-up" data-aos-delay="500">
                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img5.jpg"
-                    alt="sharing-photo" class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                    alt="sharing-photo" class="mb-3">
                 <h5>All who cycle are my friends</h5>
                 <small class="text-black-50 font-weighs-lighter">
                     2020.4.27</small>
@@ -121,9 +137,9 @@
                     imparts a feeling of freedom to the rider…
                 </p>
             </li>
-            <li class="col-lg-4 col-12 sharing-item">
+            <li class="col-lg-4 col-12 sharing-item" data-aos="fade-up" data-aos-delay="700">
                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img6.jpg"
-                    alt="sharing-photo" class="mb-3" data-aos="fade-up" data-aos-delay="200">
+                    alt="sharing-photo" class="mb-3">
                 <h5>Swedish riders and enthusiasts</h5>
                 <small class="text-black-50 font-weighs-lighter">
                     2020.3.11</small>
@@ -132,9 +148,9 @@
                     a club based in Gothenburg, annually arranging Svart Kat…
                 </p>
             </li>
-            <li class="col-lg-4 col-12 sharing-item">
+            <li class="col-lg-4 col-12 sharing-item" data-aos="fade-up" data-aos-delay="900">
                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img7.jpg"
-                    alt="sharing-photo" class="mb-3" data-aos="fade-up" data-aos-delay="300">
+                    alt="sharing-photo" class="mb-3">
                 <h5>The Australian fixie culture</h5>
                 <small class="text-black-50 font-weighs-lighter">
                     2020.2.29</small>
@@ -145,8 +161,8 @@
             </li>
         </ul>
     </div>
-    <footer class="bg-color p-2">
-        <div class="container p-0">
+    <footer class="bg-color p-2 pb-4" data-aos="fade-up" data-aos-duration="3000">
+        <div class="container p-0" >
             <nav class="navbar d-flex py-0 px-3 row no-gutters">
                 <ul class="nav-link list-unstyled d-flex justify-content-start m-0 p-0 col-4">
                     <li><a href="#" class="p-3 text-dark text-center">Product</a></li>
